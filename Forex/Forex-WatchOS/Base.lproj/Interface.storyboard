@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="S6i-3Z-N0d">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Currencies Table Interface Controller-->
+        <scene sceneID="5PH-uu-EyI">
+            <objects>
+                <controller id="S6i-3Z-N0d" customClass="CurrenciesTableInterfaceController" customModule="Forex_WatchOS_Extension">
+                    <items>
+                        <table alignment="left" id="9Mm-2k-oAx">
+                            <items>
+                                <tableRow identifier="currencyRow" id="kg9-q2-2jd" customClass="CurrencyRowController" customModule="Forex_WatchOS_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="LMr-lR-Pwi">
+                                        <items>
+                                            <label width="1" height="1" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" id="hLv-PN-kRI"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="symbolLabel" destination="hLv-PN-kRI" id="HmN-mo-KUW"/>
+                                        <segue destination="fV4-Ql-ZKt" kind="push" id="3q1-og-zA9"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="currencyTable" destination="9Mm-2k-oAx" id="fP1-ns-ZD4"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="33" y="-161"/>
+        </scene>
+        <!--Exchange Rate Detail Interface Controller-->
+        <scene sceneID="gaI-fc-VQT">
+            <objects>
+                <controller id="fV4-Ql-ZKt" customClass="ExchangeRateDetailInterfaceController" customModule="Forex_WatchOS_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="GHk-Aw-gKV">
+                            <items>
+                                <label width="1" alignment="left" text="Label" textAlignment="center" id="eu0-NX-JpU"/>
+                                <imageView height="1" alignment="left" id="MW4-W8-huP"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="exchangeRateLabel" destination="eu0-NX-JpU" id="Oig-DK-6lX"/>
+                        <outlet property="historyImage" destination="MW4-W8-huP" id="AZs-28-R1g"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="43" y="223"/>
+        </scene>
+    </scenes>
+</document>

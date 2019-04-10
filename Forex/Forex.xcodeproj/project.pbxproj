@@ -1,0 +1,931 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A6E5557225E4D3A00B590AB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A6E5555225E4D3A00B590AB /* Interface.storyboard */; };
+		7A6E5559225E4D3B00B590AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A6E5558225E4D3B00B590AB /* Assets.xcassets */; };
+		7A6E5560225E4D3B00B590AB /* Forex-WatchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7A6E555F225E4D3B00B590AB /* Forex-WatchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7A6E5567225E4D3B00B590AB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E5566225E4D3B00B590AB /* ExtensionDelegate.swift */; };
+		7A6E5569225E4D3C00B590AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A6E5568225E4D3C00B590AB /* Assets.xcassets */; };
+		7A6E556D225E4D3C00B590AB /* Forex-WatchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7A6E5553225E4D3A00B590AB /* Forex-WatchOS.app */; };
+		7ACF4BE2225E5388008F81CD /* CurrenciesTableInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF4BE1225E5388008F81CD /* CurrenciesTableInterfaceController.swift */; };
+		7ACF4BE4225E5754008F81CD /* CurrencyRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF4BE3225E5754008F81CD /* CurrencyRowController.swift */; };
+		7ACF4BE6225E5C68008F81CD /* ExchangeRateDetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF4BE5225E5C68008F81CD /* ExchangeRateDetailInterfaceController.swift */; };
+		7ACF4BF8225E60E4008F81CD /* ForexCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF4BF7225E60E4008F81CD /* ForexCore.framework */; };
+		7ACF4BF9225E60E4008F81CD /* ForexCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7ACF4BF7225E60E4008F81CD /* ForexCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9D1EB744217D81FF00982AFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1EB743217D81FF00982AFC /* AppDelegate.swift */; };
+		9D1EB749217D81FF00982AFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D1EB747217D81FF00982AFC /* Main.storyboard */; };
+		9D1EB74B217D820300982AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D1EB74A217D820300982AFC /* Assets.xcassets */; };
+		9D1EB74E217D820300982AFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D1EB74C217D820300982AFC /* LaunchScreen.storyboard */; };
+		9D1EB75C217DA1DD00982AFC /* ExchangeRateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1EB75B217DA1DD00982AFC /* ExchangeRateDetailViewController.swift */; };
+		9D1EB763217DA27100982AFC /* SymbolsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1EB762217DA27100982AFC /* SymbolsTableViewController.swift */; };
+		9D1EB78C217DA5C300982AFC /* ForexCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1EB78B217DA5B500982AFC /* ForexCore.framework */; };
+		9D1EB78D217DA5C300982AFC /* ForexCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1EB78B217DA5B500982AFC /* ForexCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9D1EB7A1217DA6E800982AFC /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1EB7A0217DA6E800982AFC /* NotificationCenter.framework */; };
+		9D1EB7A4217DA6E800982AFC /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1EB7A3217DA6E800982AFC /* TodayViewController.swift */; };
+		9D1EB7A7217DA6E800982AFC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D1EB7A5217DA6E800982AFC /* MainInterface.storyboard */; };
+		9D1EB7AB217DA6E800982AFC /* ForexWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9D1EB79F217DA6E800982AFC /* ForexWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9D1EB7B0217DA7E700982AFC /* ForexCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1EB78B217DA5B500982AFC /* ForexCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A6E5561225E4D3B00B590AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D1EB738217D81FF00982AFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A6E555E225E4D3B00B590AB;
+			remoteInfo = "Forex-WatchOS Extension";
+		};
+		7A6E556B225E4D3C00B590AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D1EB738217D81FF00982AFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A6E5552225E4D3A00B590AB;
+			remoteInfo = "Forex-WatchOS";
+		};
+		7ACF4BF6225E60E4008F81CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D1EB786217DA5B500982AFC /* Forex-Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7ACF4BEC225E5F85008F81CD;
+			remoteInfo = "ForexCore-watchOS";
+		};
+		7ACF4BFA225E60E4008F81CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D1EB786217DA5B500982AFC /* Forex-Core.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ACF4BEB225E5F85008F81CD;
+			remoteInfo = "ForexCore-watchOS";
+		};
+		9D1EB78A217DA5B500982AFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D1EB786217DA5B500982AFC /* Forex-Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9D1EB76E217DA57400982AFC;
+			remoteInfo = "Forex-Core";
+		};
+		9D1EB78E217DA5C300982AFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D1EB786217DA5B500982AFC /* Forex-Core.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D1EB76D217DA57400982AFC;
+			remoteInfo = "Forex-Core";
+		};
+		9D1EB7A9217DA6E800982AFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D1EB738217D81FF00982AFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D1EB79E217DA6E800982AFC;
+			remoteInfo = ForexWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7A6E5571225E4D3C00B590AB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7A6E5560225E4D3B00B590AB /* Forex-WatchOS Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A6E5575225E4D3C00B590AB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7A6E556D225E4D3C00B590AB /* Forex-WatchOS.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACF4BFC225E60E4008F81CD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7ACF4BF9225E60E4008F81CD /* ForexCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D1EB790217DA5C300982AFC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9D1EB78D217DA5C300982AFC /* ForexCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D1EB7AF217DA6E800982AFC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9D1EB7AB217DA6E800982AFC /* ForexWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7A6E5553225E4D3A00B590AB /* Forex-WatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Forex-WatchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A6E5556225E4D3A00B590AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7A6E5558225E4D3B00B590AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A6E555A225E4D3B00B590AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A6E555F225E4D3B00B590AB /* Forex-WatchOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Forex-WatchOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A6E5566225E4D3B00B590AB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		7A6E5568225E4D3C00B590AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A6E556A225E4D3C00B590AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ACF4BE1225E5388008F81CD /* CurrenciesTableInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesTableInterfaceController.swift; sourceTree = "<group>"; };
+		7ACF4BE3225E5754008F81CD /* CurrencyRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRowController.swift; sourceTree = "<group>"; };
+		7ACF4BE5225E5C68008F81CD /* ExchangeRateDetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateDetailInterfaceController.swift; sourceTree = "<group>"; };
+		9D1EB740217D81FF00982AFC /* Forex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Forex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D1EB743217D81FF00982AFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D1EB748217D81FF00982AFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D1EB74A217D820300982AFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D1EB74D217D820300982AFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D1EB74F217D820300982AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D1EB75B217DA1DD00982AFC /* ExchangeRateDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRateDetailViewController.swift; sourceTree = "<group>"; };
+		9D1EB762217DA27100982AFC /* SymbolsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsTableViewController.swift; sourceTree = "<group>"; };
+		9D1EB786217DA5B500982AFC /* Forex-Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Forex-Core.xcodeproj"; path = "Forex-Core/Forex-Core.xcodeproj"; sourceTree = "<group>"; };
+		9D1EB79F217DA6E800982AFC /* ForexWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ForexWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D1EB7A0217DA6E800982AFC /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		9D1EB7A3217DA6E800982AFC /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		9D1EB7A6217DA6E800982AFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9D1EB7A8217DA6E800982AFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D1EB7B1217E2A5500982AFC /* Forex.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Forex.entitlements; sourceTree = "<group>"; };
+		9D1EB7B2217E2A6100982AFC /* ForexWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ForexWidget.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A6E555C225E4D3B00B590AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACF4BF8225E60E4008F81CD /* ForexCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D1EB73D217D81FF00982AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D1EB78C217DA5C300982AFC /* ForexCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D1EB79C217DA6E800982AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D1EB7A1217DA6E800982AFC /* NotificationCenter.framework in Frameworks */,
+				9D1EB7B0217DA7E700982AFC /* ForexCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A6E5554225E4D3A00B590AB /* Forex-WatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				7A6E5555225E4D3A00B590AB /* Interface.storyboard */,
+				7A6E5558225E4D3B00B590AB /* Assets.xcassets */,
+				7A6E555A225E4D3B00B590AB /* Info.plist */,
+			);
+			path = "Forex-WatchOS";
+			sourceTree = "<group>";
+		};
+		7A6E5563225E4D3B00B590AB /* Forex-WatchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7A6E5566225E4D3B00B590AB /* ExtensionDelegate.swift */,
+				7ACF4BE1225E5388008F81CD /* CurrenciesTableInterfaceController.swift */,
+				7ACF4BE3225E5754008F81CD /* CurrencyRowController.swift */,
+				7ACF4BE5225E5C68008F81CD /* ExchangeRateDetailInterfaceController.swift */,
+				7A6E5568225E4D3C00B590AB /* Assets.xcassets */,
+				7A6E556A225E4D3C00B590AB /* Info.plist */,
+			);
+			path = "Forex-WatchOS Extension";
+			sourceTree = "<group>";
+		};
+		9D1EB737217D81FF00982AFC = {
+			isa = PBXGroup;
+			children = (
+				9D1EB742217D81FF00982AFC /* Forex */,
+				9D1EB7A2217DA6E800982AFC /* ForexWidget */,
+				7A6E5554225E4D3A00B590AB /* Forex-WatchOS */,
+				7A6E5563225E4D3B00B590AB /* Forex-WatchOS Extension */,
+				9D1EB77A217DA5A900982AFC /* Frameworks */,
+				9D1EB741217D81FF00982AFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D1EB741217D81FF00982AFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D1EB740217D81FF00982AFC /* Forex.app */,
+				9D1EB79F217DA6E800982AFC /* ForexWidget.appex */,
+				7A6E5553225E4D3A00B590AB /* Forex-WatchOS.app */,
+				7A6E555F225E4D3B00B590AB /* Forex-WatchOS Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D1EB742217D81FF00982AFC /* Forex */ = {
+			isa = PBXGroup;
+			children = (
+				9D1EB7B1217E2A5500982AFC /* Forex.entitlements */,
+				9D1EB743217D81FF00982AFC /* AppDelegate.swift */,
+				9D1EB760217DA20300982AFC /* View Controllers */,
+				9D1EB75D217DA1E300982AFC /* Resources */,
+			);
+			path = Forex;
+			sourceTree = "<group>";
+		};
+		9D1EB75D217DA1E300982AFC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9D1EB747217D81FF00982AFC /* Main.storyboard */,
+				9D1EB74A217D820300982AFC /* Assets.xcassets */,
+				9D1EB74C217D820300982AFC /* LaunchScreen.storyboard */,
+				9D1EB74F217D820300982AFC /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9D1EB760217DA20300982AFC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D1EB762217DA27100982AFC /* SymbolsTableViewController.swift */,
+				9D1EB75B217DA1DD00982AFC /* ExchangeRateDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9D1EB77A217DA5A900982AFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D1EB786217DA5B500982AFC /* Forex-Core.xcodeproj */,
+				9D1EB7A0217DA6E800982AFC /* NotificationCenter.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D1EB787217DA5B500982AFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D1EB78B217DA5B500982AFC /* ForexCore.framework */,
+				7ACF4BF7225E60E4008F81CD /* ForexCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D1EB7A2217DA6E800982AFC /* ForexWidget */ = {
+			isa = PBXGroup;
+			children = (
+				9D1EB7B2217E2A6100982AFC /* ForexWidget.entitlements */,
+				9D1EB7A3217DA6E800982AFC /* TodayViewController.swift */,
+				9D1EB7A5217DA6E800982AFC /* MainInterface.storyboard */,
+				9D1EB7A8217DA6E800982AFC /* Info.plist */,
+			);
+			path = ForexWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A6E5552225E4D3A00B590AB /* Forex-WatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A6E5572225E4D3C00B590AB /* Build configuration list for PBXNativeTarget "Forex-WatchOS" */;
+			buildPhases = (
+				7A6E5551225E4D3A00B590AB /* Resources */,
+				7A6E5571225E4D3C00B590AB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A6E5562225E4D3B00B590AB /* PBXTargetDependency */,
+			);
+			name = "Forex-WatchOS";
+			productName = "Forex-WatchOS";
+			productReference = 7A6E5553225E4D3A00B590AB /* Forex-WatchOS.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7A6E555E225E4D3B00B590AB /* Forex-WatchOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A6E556E225E4D3C00B590AB /* Build configuration list for PBXNativeTarget "Forex-WatchOS Extension" */;
+			buildPhases = (
+				7A6E555B225E4D3B00B590AB /* Sources */,
+				7A6E555C225E4D3B00B590AB /* Frameworks */,
+				7A6E555D225E4D3B00B590AB /* Resources */,
+				7ACF4BFC225E60E4008F81CD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7ACF4BFB225E60E4008F81CD /* PBXTargetDependency */,
+			);
+			name = "Forex-WatchOS Extension";
+			productName = "Forex-WatchOS Extension";
+			productReference = 7A6E555F225E4D3B00B590AB /* Forex-WatchOS Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		9D1EB73F217D81FF00982AFC /* Forex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D1EB752217D820300982AFC /* Build configuration list for PBXNativeTarget "Forex" */;
+			buildPhases = (
+				9D1EB73C217D81FF00982AFC /* Sources */,
+				9D1EB73D217D81FF00982AFC /* Frameworks */,
+				9D1EB73E217D81FF00982AFC /* Resources */,
+				9D1EB790217DA5C300982AFC /* Embed Frameworks */,
+				9D1EB7AF217DA6E800982AFC /* Embed App Extensions */,
+				7A6E5575225E4D3C00B590AB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D1EB78F217DA5C300982AFC /* PBXTargetDependency */,
+				9D1EB7AA217DA6E800982AFC /* PBXTargetDependency */,
+				7A6E556C225E4D3C00B590AB /* PBXTargetDependency */,
+			);
+			name = Forex;
+			productName = Forex;
+			productReference = 9D1EB740217D81FF00982AFC /* Forex.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D1EB79E217DA6E800982AFC /* ForexWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D1EB7AC217DA6E800982AFC /* Build configuration list for PBXNativeTarget "ForexWidget" */;
+			buildPhases = (
+				9D1EB79B217DA6E800982AFC /* Sources */,
+				9D1EB79C217DA6E800982AFC /* Frameworks */,
+				9D1EB79D217DA6E800982AFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ForexWidget;
+			productName = ForexWidget;
+			productReference = 9D1EB79F217DA6E800982AFC /* ForexWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D1EB738217D81FF00982AFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Lambda School";
+				TargetAttributes = {
+					7A6E5552225E4D3A00B590AB = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					7A6E555E225E4D3B00B590AB = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					9D1EB73F217D81FF00982AFC = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					9D1EB79E217DA6E800982AFC = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9D1EB73B217D81FF00982AFC /* Build configuration list for PBXProject "Forex" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D1EB737217D81FF00982AFC;
+			productRefGroup = 9D1EB741217D81FF00982AFC /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9D1EB787217DA5B500982AFC /* Products */;
+					ProjectRef = 9D1EB786217DA5B500982AFC /* Forex-Core.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				9D1EB73F217D81FF00982AFC /* Forex */,
+				9D1EB79E217DA6E800982AFC /* ForexWidget */,
+				7A6E5552225E4D3A00B590AB /* Forex-WatchOS */,
+				7A6E555E225E4D3B00B590AB /* Forex-WatchOS Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7ACF4BF7225E60E4008F81CD /* ForexCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ForexCore.framework;
+			remoteRef = 7ACF4BF6225E60E4008F81CD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9D1EB78B217DA5B500982AFC /* ForexCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ForexCore.framework;
+			remoteRef = 9D1EB78A217DA5B500982AFC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A6E5551225E4D3A00B590AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A6E5559225E4D3B00B590AB /* Assets.xcassets in Resources */,
+				7A6E5557225E4D3A00B590AB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A6E555D225E4D3B00B590AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A6E5569225E4D3C00B590AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D1EB73E217D81FF00982AFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D1EB74E217D820300982AFC /* LaunchScreen.storyboard in Resources */,
+				9D1EB74B217D820300982AFC /* Assets.xcassets in Resources */,
+				9D1EB749217D81FF00982AFC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D1EB79D217DA6E800982AFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D1EB7A7217DA6E800982AFC /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A6E555B225E4D3B00B590AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A6E5567225E4D3B00B590AB /* ExtensionDelegate.swift in Sources */,
+				7ACF4BE6225E5C68008F81CD /* ExchangeRateDetailInterfaceController.swift in Sources */,
+				7ACF4BE4225E5754008F81CD /* CurrencyRowController.swift in Sources */,
+				7ACF4BE2225E5388008F81CD /* CurrenciesTableInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D1EB73C217D81FF00982AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D1EB763217DA27100982AFC /* SymbolsTableViewController.swift in Sources */,
+				9D1EB75C217DA1DD00982AFC /* ExchangeRateDetailViewController.swift in Sources */,
+				9D1EB744217D81FF00982AFC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D1EB79B217DA6E800982AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D1EB7A4217DA6E800982AFC /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A6E5562225E4D3B00B590AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A6E555E225E4D3B00B590AB /* Forex-WatchOS Extension */;
+			targetProxy = 7A6E5561225E4D3B00B590AB /* PBXContainerItemProxy */;
+		};
+		7A6E556C225E4D3C00B590AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A6E5552225E4D3A00B590AB /* Forex-WatchOS */;
+			targetProxy = 7A6E556B225E4D3C00B590AB /* PBXContainerItemProxy */;
+		};
+		7ACF4BFB225E60E4008F81CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ForexCore-watchOS";
+			targetProxy = 7ACF4BFA225E60E4008F81CD /* PBXContainerItemProxy */;
+		};
+		9D1EB78F217DA5C300982AFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Forex-Core";
+			targetProxy = 9D1EB78E217DA5C300982AFC /* PBXContainerItemProxy */;
+		};
+		9D1EB7AA217DA6E800982AFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D1EB79E217DA6E800982AFC /* ForexWidget */;
+			targetProxy = 9D1EB7A9217DA6E800982AFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7A6E5555225E4D3A00B590AB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A6E5556225E4D3A00B590AB /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		9D1EB747217D81FF00982AFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D1EB748217D81FF00982AFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D1EB74C217D820300982AFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D1EB74D217D820300982AFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9D1EB7A5217DA6E800982AFC /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D1EB7A6217DA6E800982AFC /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A6E556F225E4D3C00B590AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZD9LN99SX6;
+				INFOPLIST_FILE = "Forex-WatchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NelsonGonzalez.Forex.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		7A6E5570225E4D3C00B590AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZD9LN99SX6;
+				INFOPLIST_FILE = "Forex-WatchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NelsonGonzalez.Forex.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		7A6E5573225E4D3C00B590AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZD9LN99SX6;
+				IBSC_MODULE = Forex_WatchOS_Extension;
+				INFOPLIST_FILE = "Forex-WatchOS/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NelsonGonzalez.Forex.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		7A6E5574225E4D3C00B590AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZD9LN99SX6;
+				IBSC_MODULE = Forex_WatchOS_Extension;
+				INFOPLIST_FILE = "Forex-WatchOS/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NelsonGonzalez.Forex.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		9D1EB750217D820300982AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D1EB751217D820300982AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D1EB753217D820300982AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Forex/Forex.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZD9LN99SX6;
+				INFOPLIST_FILE = "$(SRCROOT)/Forex/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NelsonGonzalez.Forex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D1EB754217D820300982AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Forex/Forex.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZD9LN99SX6;
+				INFOPLIST_FILE = "$(SRCROOT)/Forex/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NelsonGonzalez.Forex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9D1EB7AD217DA6E800982AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ForexWidget/ForexWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZD9LN99SX6;
+				INFOPLIST_FILE = ForexWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NelsonGonzalez.Forex.ForexWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D1EB7AE217DA6E800982AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ForexWidget/ForexWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZD9LN99SX6;
+				INFOPLIST_FILE = ForexWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.NelsonGonzalez.Forex.ForexWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A6E556E225E4D3C00B590AB /* Build configuration list for PBXNativeTarget "Forex-WatchOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A6E556F225E4D3C00B590AB /* Debug */,
+				7A6E5570225E4D3C00B590AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A6E5572225E4D3C00B590AB /* Build configuration list for PBXNativeTarget "Forex-WatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A6E5573225E4D3C00B590AB /* Debug */,
+				7A6E5574225E4D3C00B590AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D1EB73B217D81FF00982AFC /* Build configuration list for PBXProject "Forex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D1EB750217D820300982AFC /* Debug */,
+				9D1EB751217D820300982AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D1EB752217D820300982AFC /* Build configuration list for PBXNativeTarget "Forex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D1EB753217D820300982AFC /* Debug */,
+				9D1EB754217D820300982AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D1EB7AC217DA6E800982AFC /* Build configuration list for PBXNativeTarget "ForexWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D1EB7AD217DA6E800982AFC /* Debug */,
+				9D1EB7AE217DA6E800982AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D1EB738217D81FF00982AFC /* Project object */;
+}
